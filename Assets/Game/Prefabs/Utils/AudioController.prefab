@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7059652787528974241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7059652787528974245}
+  - component: {fileID: 5763528327362874768}
+  - component: {fileID: 2869726372866650881}
+  - component: {fileID: 3443062012156321740}
+  m_Layer: 0
+  m_Name: AudioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7059652787528974245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059652787528974241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5763528327362874768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059652787528974241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2113212453a33f478048f37a4fad427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2869726372866650881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059652787528974241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f07955abeb2c0f4ba39c1b8bb3be2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmClips:
+  - name: InGame
+    clip: {fileID: 8300000, guid: b6e9bc58e2b5a7c4eaf8bb44500408cb, type: 3}
+  - name: WinMusic
+    clip: {fileID: 8300000, guid: e581181e89f357c44aa400c63a4e8f80, type: 3}
+  sfxClips:
+  - name: click
+    clip: {fileID: 8300000, guid: abb6114996a4bca4bbc58dbcf8c21588, type: 3}
+  - name: dash
+    clip: {fileID: 8300000, guid: 04c71ad86692e1e4a9824fba75a1e254, type: 3}
+  - name: pickup
+    clip: {fileID: 8300000, guid: ee51c811f7490764fa0853c2edd26423, type: 3}
+  - name: push
+    clip: {fileID: 8300000, guid: 7e23a36f5452c2641891c47edbdd6c3e, type: 3}
+  - name: trashimpact
+    clip: {fileID: 8300000, guid: 947cc6c0a5cafc849a0ba45fa8ed3843, type: 3}
+--- !u!114 &3443062012156321740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059652787528974241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 480aa48ff4425d9468fd4cb302ea4e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioController: {fileID: 5763528327362874768}
+  audioLibrary: {fileID: 2869726372866650881}
